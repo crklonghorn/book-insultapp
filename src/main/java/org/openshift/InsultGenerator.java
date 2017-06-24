@@ -30,7 +30,7 @@ public class InsultGenerator {
 			}
 			theInsult = String.format("Thou art %s %s %s %s!", article, rs.getString("first"), rs.getString("second"), rs.getString("noun"));
 		}
-		rs.clos();
+		rs.close();
 		connection.close();
 		}
 		} catch (Exception e) {
